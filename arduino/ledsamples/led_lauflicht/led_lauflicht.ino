@@ -17,6 +17,16 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  //calling method to pull pins high and light LEDs
+  pullHigh();
+  //calling method to pull pins low and dim off LEDs
+  pullLow();
+  delay(100);
+}
+
+void pullHigh()
+{
+  // start pulling all pins high
   digitalWrite(led1, HIGH);
   delay(100);
   digitalWrite(led2, HIGH);
@@ -29,6 +39,11 @@ void loop() {
   delay(100);
   digitalWrite(led6, HIGH);
   delay(100);
+}
+
+void pullLow()
+{
+  // start pulling all pins low
   digitalWrite(led1, LOW);
   delay(100);
   digitalWrite(led2, LOW);
@@ -40,5 +55,4 @@ void loop() {
   digitalWrite(led5, LOW);
   delay(100);
   digitalWrite(led6, LOW);
-  delay(100);
 }
