@@ -1,3 +1,5 @@
+//define GPIO Pins as variables
+
 int led1 = 2;
 int led2 = 3;
 int led3 = 4;
@@ -6,7 +8,7 @@ int led5 = 6;
 int led6 = 7;
 
 void setup() {
-  // put your setup code here, to run once:
+  //set all used pins to be output pins
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
@@ -16,7 +18,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // start pulling all pins high
   digitalWrite(led1, HIGH);
   delay(100);
   digitalWrite(led2, HIGH);
@@ -29,6 +31,7 @@ void loop() {
   delay(100);
   digitalWrite(led6, HIGH);
   delay(100);
+  // start pulling all pins low
   digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
