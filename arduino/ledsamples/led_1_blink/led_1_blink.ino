@@ -2,6 +2,7 @@ int led1 = 2;
 
 void setup() {
   // put your setup code here, to run once:
+  // Defining pinMode of led1
   pinMode(led1, OUTPUT);
 }
 
